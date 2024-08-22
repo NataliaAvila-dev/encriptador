@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/svg/Logoalura-logo.svg" alt="logo alura">
+    </header>
+    <main>
+        <form class="form__section">
+            <textarea class="form__input" name="mensaje" cols="30" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <div class="btn__container">
+                <div class="alert__msj"><img src="./assets/svg/alert__icon.svg" alt="alert icon"><span>Solo letras
+                        minúsculas y sin acentos</span></div>
+            </div>
+            <div class="submit__container">
+                <input id="encriptar-btn" class="form__btn" type="button" value="Encriptar">
+                <input id="desencriptar-btn" class="form__btn form__btn--secundary" type="button" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="result">
+            <img src="./assets/img/Muñeco.png" alt="imagen de muñeco" class="result__img">
+            <div class="loader hidden"></div>
+            <div class="result__container">
+                <h3 class="result__title">Ingresa el texto que desees encriptar o desencriptar.</h3>
+                <p class="result__text"></p>
+                <button class="result__btn form__btn form__btn--secundary hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <p id="modal-message">Este es un mensaje de prueba en el modal.</p>
+          <p id="modal-accept" class="modal-accept-text">Aceptar</p>
+        </div>
+      </div>
+  
+
+    <script src="./encriptador.js"></script>
+</body>
+
+</html>
