@@ -110,6 +110,7 @@ botonEncriptar.addEventListener("click", (e) => {
   } else {
     let mensajeEncriptado = encriptarMensaje(mensaje);
     resultadoText.textContent = mensajeEncriptado;
+    textArea.value = "";
     botonCopiar.classList.remove("hidden");
     resultadoTitulo.textContent = "El resultado es:";
   }
@@ -124,6 +125,7 @@ botonDesencriptar.addEventListener("click", (e) => {
   } else {
     let mensajeDesencriptado = desencriptarMensaje(mensaje);
     resultadoText.textContent = mensajeDesencriptado;
+    textArea.value = "";
     resultadoTitulo.textContent = "El resultado es:";
     botonCopiar.classList.remove("hidden");
   }
