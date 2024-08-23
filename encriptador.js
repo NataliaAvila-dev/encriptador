@@ -32,6 +32,7 @@ function convertirMinusculasSinAcentos(texto) {
     .replace(/í/g, "i")
     .replace(/ó/g, "o")
     .replace(/ú/g, "u")
+    .replace(/[^a-z\s]/g, ""); 
 }
 
 // Aplicar la función mientras el usuario escribe
